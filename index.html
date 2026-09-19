@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Ibrahim | Mechanical Engineer & 3D Designer</title>
+    <meta name="description" content="Portfolio of Ahmed Ibrahim - Mechanical Engineer & 3D Designer | SolidWorks, Blender, Photoshop, CapCut, AI">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- نافذة اختيار اللغة -->
+    <div class="lang-overlay" id="langOverlay">
+        <div class="lang-content">
+            <div class="lang-globe">🌍</div>
+            <h2 class="lang-title" id="langTitle">اختر اللغة</h2>
+            <p class="lang-subtitle" id="langSubtitle">Choose your language</p>
+            <div class="lang-buttons">
+                <button class="lang-btn" onclick="setLanguage('ar')">
+                    <span>🇸🇦</span>
+                    <span>العربية</span>
+                </button>
+                <button class="lang-btn" onclick="setLanguage('en')">
+                    <span>🇬🇧</span>
+                    <span>English</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- الموقع -->
+    <div class="site-wrapper" id="siteWrapper">
+
+        <header>
+            <nav>
+                <h1 class="logo">Ahmed<span>.</span></h1>
+                <ul>
+                    <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                    <li><a href="#about" data-ar="عني" data-en="About">عني</a></li>
+                    <li><a href="#skills" data-ar="مهاراتي" data-en="Skills">مهاراتي</a></li>
+                    <li><a href="#works" data-ar="المشاريع" data-en="Projects">المشاريع</a></li>
+                    <li><a href="#certificates" data-ar="شهاداتي" data-en="Certificates">شهاداتي</a></li>
+                    <li><a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a></li>
+                </ul>
+                <button class="lang-toggle" onclick="openLangOverlay()" title="تغيير اللغة">
+                    🌐 <span id="langToggleText">EN</span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- الرئيسية -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="greeting" data-ar="👋 مرحباً، أنا" data-en="👋 Hello, I'm">👋 مرحباً، أنا</p>
+                <h2><span data-ar="أحمد" data-en="Ahmed">أحمد</span> <span class="accent" data-ar="إبراهيم" data-en="Ibrahim">إبراهيم</span></h2>
+                <p class="title" 
+                   data-ar="مهندس ميكانيكي | مصمم 3D | معدّل صور وفيديو"
+                   data-en="Mechanical Engineer | 3D Designer | Photo & Video Editor">
+                    مهندس ميكانيكي | مصمم 3D | معدّل صور وفيديو
+                </p>
+                <p class="desc"
+                   data-ar="متخصص في التصميم الميكانيكي بـ SolidWorks، والنمذجة ثلاثية الأبعاد بـ Blender، وتعديل الصور بـ Photoshop، مصمم جرافيك ومحتوى رقمي."
+                   data-en="Specialized in mechanical design with SolidWorks, 3D modeling with Blender, photo editing with Photoshop, and digital content design.">
+                    متخصص في التصميم الميكانيكي بـ SolidWorks، والنمذجة ثلاثية الأبعاد بـ Blender، وتعديل الصور بـ Photoshop، مصمم جرافيك ومحتوى رقمي.
+                </p>
+                <div class="hero-btns">
+                    <a href="#works" class="btn btn-primary" 
+                       data-ar="شاهد مشاريعي" data-en="View My Work">شاهد مشاريعي</a>
+                    <a href="#contact" class="btn btn-outline" 
+                       data-ar="تواصل معي" data-en="Contact Me">تواصل معي</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- عني -->
+        <section id="about">
+            <h2 class="section-title" data-ar="عني" data-en="About Me">عني</h2>
+
+            <div class="about-block">
+                <h3 data-ar="🔧 مهندس ميكانيكي شغوف بالتصميم والإبداع البصري"
+                    data-en="🔧 Mechanical Engineer Passionate About Design & Visual Creativity">
+                    🔧 مهندس ميكانيكي شغوف بالتصميم والإبداع البصري
+                </h3>
+                <p data-ar="أنا مهندس ميكانيكي متخصص في تصميم الأنظمة الميكانيكية والنماذج ثلاثية الأبعاد. أعمل على تحويل الأفكار الهندسية إلى تصاميم دقيقة وقابلة للتنفيذ باستخدام SolidWorks، مع إنتاج مشاهد احترافية."
+                   data-en="I'm a mechanical engineer specialized in designing mechanical systems and 3D models. I transform engineering ideas into accurate, executable designs using SolidWorks, producing professional renders.">
+                    أنا مهندس ميكانيكي متخصص في تصميم الأنظمة الميكانيكية والنماذج ثلاثية الأبعاد. أعمل على تحويل الأفكار الهندسية إلى تصاميم دقيقة وقابلة للتنفيذ باستخدام SolidWorks، مع إنتاج مشاهد احترافية.
+                </p>
+            </div>
+
+            <div class="about-block">
+                <h3 data-ar="🎨 مصمم بصري ومبتكر ثلاثي الأبعاد"
+                    data-en="🎨 Visual Designer & 3D Innovator">
+                    🎨 مصمم بصري ومبتكر ثلاثي الأبعاد
+                </h3>
+                <p data-ar="أدمج بين دقة الهندسة الميكانيكية وجماليات الفن البصري؛ لأحوّل الأفكار المعقدة إلى نماذج ثلاثية الأبعاد تنبض بالحياة. أتقن صناعة الهويات البصرية، تعديل الصور الاحترافي، وابتكار محتوى بصري جذاب (منشورات وريلز) يترك أثراً ويصنع الفارق على منصات التواصل الاجتماعي."
+                   data-en="I blend the precision of mechanical engineering with the aesthetics of visual art to turn complex ideas into vibrant 3D models. I master brand identity creation, professional photo editing, and crafting engaging visual content (posts & reels) that makes an impact on social media.">
+                    أدمج بين دقة الهندسة الميكانيكية وجماليات الفن البصري؛ لأحوّل الأفكار المعقدة إلى نماذج ثلاثية الأبعاد تنبض بالحياة. أتقن صناعة الهويات البصرية، تعديل الصور الاحترافي، وابتكار محتوى بصري جذاب (منشورات وريلز) يترك أثراً ويصنع الفارق على منصات التواصل الاجتماعي.
+                </p>
+                <p data-ar="مع إجادة استخدام أدوات الذكاء الاصطناعي لتوليد محتوى جذاب بأحدث التقنيات."
+                   data-en="Skilled in using AI tools to generate engaging content with the latest technologies.">
+                    مع إجادة استخدام أدوات الذكاء الاصطناعي لتوليد محتوى جذاب بأحدث التقنيات.
+                </p>
+            </div>
+        </section>
+
+        <!-- المهارات -->
+        <section id="skills">
+            <h2 class="section-title" data-ar="مهاراتي" data-en="My Skills">مهاراتي</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>SolidWorks</h3>
+                    <p data-ar="تصميم ميكانيكي دقيق وتجميعات معقدة"
+                       data-en="Precise mechanical design & complex assemblies">
+                        تصميم ميكانيكي دقيق وتجميعات معقدة
+                    </p>
+                    <div class="progress"><div class="bar" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Blender</h3>
+                    <p data-ar="نمذجة ثلاثية الأبعاد وإضاءة ومواد واقعية"
+                       data-en="3D modeling, lighting & realistic materials">
+                        نمذجة ثلاثية الأبعاد وإضاءة ومواد واقعية
+                    </p>
+                    <div class="progress"><div class="bar" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🖼️</div>
+                    <h3>Photoshop</h3>
+                    <p data-ar="تعديل الصور والعروض البصرية الاحترافية"
+                       data-en="Photo editing & professional visuals">
+                        تعديل الصور والعروض البصرية الاحترافية
+                    </p>
+                    <div class="progress"><div class="bar" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎬</div>
+                    <h3>CapCut</h3>
+                    <p data-ar="مونتاج الفيديو وإنتاج محتوى بصري"
+                       data-en="Video editing & visual content production">
+                        مونتاج الفيديو وإنتاج محتوى بصري
+                    </p>
+                    <div class="progress"><div class="bar" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3 data-ar="الذكاء الاصطناعي" data-en="Artificial Intelligence">الذكاء الاصطناعي</h3>
+                    <p data-ar="استخدام أدوات AI لتوليد محتوى جذاب"
+                       data-en="Using AI tools to generate engaging content">
+                        استخدام أدوات AI لتوليد محتوى جذاب
+                    </p>
+                    <div class="progress"><div class="bar" style="width: 80%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- المشاريع -->
+        <section id="works">
+            <h2 class="section-title" data-ar="المشاريع" data-en="Projects">المشاريع</h2>
+            <div class="gallery" id="projectsGallery"></div>
+        </section>
+
+        <!-- الشهادات -->
+        <section id="certificates">
+            <h2 class="section-title" data-ar="شهاداتي" data-en="My Certificates">شهاداتي</h2>
+            <div class="certificates-grid" id="certificatesGrid"></div>
+        </section>
+
+        <!-- تواصل -->
+        <section id="contact">
+            <h2 class="section-title" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</h2>
+            <p class="contact-desc" 
+               data-ar="عندك مشروع أو استفسار؟ راسلني مباشرة"
+               data-en="Have a project or a question? Reach out directly">
+                عندك مشروع أو استفسار؟ راسلني مباشرة
+            </p>
+            <a href="mailto:sosio2ah@gmail.com" class="btn btn-primary email-btn">
+                📧 sosio2ah@gmail.com
+            </a>
+        </section>
+
+        <footer>
+            <p data-ar="© 2025 أحمد إبراهيم - جميع الحقوق محفوظة"
+               data-en="© 2025 Ahmed Ibrahim - All rights reserved">
+                © 2025 أحمد إبراهيم - جميع الحقوق محفوظة
+            </p>
+        </footer>
+
+        <!-- نافذة عرض الصور -->
+        <div class="lightbox" id="lightbox">
+            <span class="close">&times;</span>
+            <img src="" alt="Preview" id="lightbox-img">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
